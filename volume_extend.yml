@@ -1,0 +1,7 @@
+- name: Extend the logical volume to take all remaining space of the PVs and resize the underlying filesystem
+  lvol:
+      vg: sample-vg
+      lv: sample-lv
+      size: 2g
+      resizefs: true
+      force: yes
